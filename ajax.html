@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+
+<script>
+  var myReq = new XMLHttpRequest;
+  console.log(myReq)
+  myReq.open('get', 'file.json')
+  myReq.onload = function(){
+    var res = JSON.parse(myReq.responseText)
+    console.log(res[1].animalName + res[1].legsCount)
+  }
+  myReq.send()
+</script>
+</html>

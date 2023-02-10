@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <div class="center-content__container">
+      <img src="id-alibi.png" alt="" class="center-image">
+      <img src="map.png" alt="" class="bottom-image yeah">
+      <div class="gps-line1__container">
+        <div class="line-hor__container">
+          <div class="gps-line line-hor"></div>
+          <div class="gps-line line-hor"></div>
+          <div class="gps-line line-hor"></div>
+          <div class="gps-line line-hor"></div>
+          <div class="gps-line line-hor"></div>
+          <div class="gps-line line-hor"></div>
+          <div class="gps-line line-hor"></div>
+        </div>
+        <div class="line-ver__container">
+          <div class="gps-line line-ver"></div>
+          <div class="gps-line line-ver"></div>
+          <div class="gps-line line-ver"></div>
+        </div>
+      </div>
+      <div class="gps-line2__container">
+        <div class="hor-line__wrapper">
+          <div class="gps-line hor-line"></div>
+          <div class="gps-line hor-line"></div>
+          <div class="gps-line hor-line"></div>
+          <div class="gps-line hor-line"></div>
+          <div class="gps-line hor-line"></div>
+          <div class="gps-line hor-line"></div>
+          <div class="gps-line hor-line"></div>
+        </div>
+        <div class="ver-line__wrapper">
+            <div class="gps-line ver-line"></div>
+            <div class="gps-line ver-line"></div>
+            <div class="gps-line ver-line"></div>
+        </div>
+      </div>
+      <img src="gps-icon.png" alt="" class="gps-icon paper-plane__icon">
+      <img src="location-icon.png" alt="" class="gps-icon location-icon">
+      <div class="gps-dec__container">
+         <p class="text">Name: Dennis Scott</p>
+          <p class="text-loc">Location: 1234 NW Bobcat Lane,st.</p>
+          
+          <p class="text-date">Date: 07-09-2021</p>
+          <p class="text-time">Time: 12:23:45PM</p>
+
+      </div>
+    </div>
+  </div>
+</body>
+<script>
+
+    function AnimateGpsImage(element, time){
+      setTimeout(() => {
+        document.querySelector(element).style.opacity = "100%"
+      }, time);
+    }
+
+    function AnimateGps(element, time){
+      setTimeout(() => {
+        document.querySelector(element).style.backgroundColor = "gray"
+      }, time);
+    }
+    
+    function typeAnimate(element, time){
+      setTimeout(() => {
+      $(element).css('animation', "type 3s steps(18) alternate");
+      $(element).css("opacity","100%");
+    }, time);
+    }
+
+   
+    AnimateGps('.line-ver:nth-child(3)',200)
+    AnimateGps('.line-ver:nth-child(2)',400)
+    AnimateGps('.line-ver:nth-child(1)',600)
+    AnimateGps('.gps-line:nth-child(7)',800)
+    AnimateGps('.gps-line:nth-child(6)',1000)
+    AnimateGps('.gps-line:nth-child(5)',1200)
+    AnimateGps('.gps-line:nth-child(4)',1400)
+    AnimateGps('.gps-line:nth-child(3)',1600)
+    AnimateGps('.gps-line:nth-child(2)',1800)
+    AnimateGps('.gps-line:nth-child(1)',2000)
+    AnimateGpsImage('.location-icon', 2200)
+    AnimateGpsImage('.gps-dec__container', 2400)
+    typeAnimate('.text',2600)
+    typeAnimate('.text-loc',4600)
+    typeAnimate('.text-date',7600)
+    typeAnimate('.text-time',9600)
+
+
+    AnimateGps('.ver-line:nth-child(3)',2600)
+    AnimateGps('.ver-line:nth-child(2)',2800)
+    AnimateGps('.ver-line:nth-child(1)',3000)
+    AnimateGps('.hor-line:nth-child(1)',3200)
+    AnimateGps('.hor-line:nth-child(2)',3400)
+    AnimateGps('.hor-line:nth-child(3)',3600)
+    AnimateGps('.hor-line:nth-child(4)',3800)
+    AnimateGps('.hor-line:nth-child(5)',3900)
+    AnimateGps('.hor-line:nth-child(6)',4000)
+    AnimateGps('.hor-line:nth-child(7)',4200)
+    AnimateGpsImage('.paper-plane__icon', 4400)
+  
+
+    
+</script>
+</html>
+

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+
+<div class="container">
+  <div class="main-animation__container">
+
+    <img src="fingerprint.png" alt="" class="ending-icon crypto">
+    <p class="icon-text crypto-text">Cryptographic Blockchain</p>
+
+    <img src="facebio.png" alt="" class="ending-icon face-bio">
+    <p class="icon-text face-bio__text">Embeded with facial biometrics</p>
+
+    <img src="fingerprint.png" alt="" class="ending-icon finger">
+    <p class="icon-text finger-text">Embedded with fingerprint biometrics</p>
+
+    
+
+    <img src="Card.svg" alt="" class="card-image">
+    <div class="arrow1-container">
+      <div class="arrow-hor__line"></div>
+      <div class="arrow-hor__line"></div>
+      <div class="arrow-hor__line"></div>
+      <div class="arrow-hor__line"></div>
+      <div class="arrow-hor__line"></div>
+      <div class="arrow-hor__line"></div>
+      <div class="arrow-hor__line"></div>
+      <div class="arrow-hor__line"></div>
+      <div class="arrow-hor__line"></div>
+      <div class="arrow-hor__line"></div>
+      <div class="vertical-container"> 
+        <div class="arrow-hor__line ver"></div>
+        <div class="arrow-hor__line ver"></div>
+      </div>
+      
+    </div>
+    <div class="arrow2-container">
+      <div class="arrow2-hor__line"></div>
+      <div class="arrow2-hor__line"></div>
+      <div class="arrow2-hor__line"></div>
+      <div class="arrow2-hor__line"></div>
+      <div class="arrow2-hor__line"></div>
+      <div class="arrow2-hor__line"></div>
+      <div class="arrow2-hor__line"></div>
+      <div class="arrow2-hor__line"></div>
+      <div class="arrow2-hor__line"></div>
+      <div class="arrow2-hor__line"></div>
+    </div>
+
+    <div class="arrow3-container">
+      <div class="arrow3-hor__line"></div>
+      <div class="arrow3-hor__line"></div>
+      <div class="arrow3-hor__line"></div>
+      <div class="arrow3-hor__line"></div>
+      <div class="arrow3-hor__line"></div>
+      <div class="arrow3-hor__line"></div>
+      <div class="arrow3-hor__line"></div>
+      <div class="arrow3-hor__line"></div>
+      <div class="arrow3-hor__line"></div>
+      <div class="arrow3-hor__line"></div>
+    </div>
+
+  </div>
+</div>
+
+ <script>
+
+
+
+
+  function animate(element,time){
+
+    setInterval(() => {
+    document.querySelector(element).style.backgroundColor = "#595A5A";
+  }, time);
+    
+  }
+
+function animateImage(element,time){
+
+  setInterval(() => {
+  document.querySelector(element).style.opacity = "100%";
+  }, time);
+}
+
+
+function removeStyle(){
+  
+}
+
+function loopHideShow(element,time){
+
+setInterval(() => {
+document.querySelector(element).style.opacity = "100%";
+}, time);
+}
+
+
+  animate('.arrow-hor__line:nth-child(1)',200)
+  animate('.arrow-hor__line:nth-child(2)',400)
+  animate('.arrow-hor__line:nth-child(3)',600)
+  animate('.arrow-hor__line:nth-child(4)',800)
+  animate('.arrow-hor__line:nth-child(5)',1000)
+  animate('.arrow-hor__line:nth-child(6)',1200)
+  animate('.arrow-hor__line:nth-child(7)',1400)
+  animate('.arrow-hor__line:nth-child(8)',1600)
+  animate('.arrow-hor__line:nth-child(9)',1800)
+  animate('.arrow-hor__line:nth-child(10)',2000)
+  animate('.ver:nth-child(2)',2200)
+  animate('.ver:nth-child(1)',2400)
+  animateImage('.face-bio',2600)
+  animateImage('.face-bio__text',2800)
+
+
+  animate('.arrow2-hor__line:nth-child(1)',4000)
+  animate('.arrow2-hor__line:nth-child(2)',3800)
+  animate('.arrow2-hor__line:nth-child(3)',3600)
+  animate('.arrow2-hor__line:nth-child(4)',3400)
+  animate('.arrow2-hor__line:nth-child(5)',3200)
+  animate('.arrow2-hor__line:nth-child(6)',3000)
+  animate('.arrow2-hor__line:nth-child(7)',2800)
+  animate('.arrow2-hor__line:nth-child(8)',2600)
+  animate('.arrow2-hor__line:nth-child(9)',2400)
+  animate('.arrow2-hor__line:nth-child(10)',2200)
+  animateImage('.finger-text',4200)
+  animateImage('.finger',4400)
+
+  animate('.arrow3-hor__line:nth-child(1)',6000)
+  animate('.arrow3-hor__line:nth-child(2)',5800)
+  animate('.arrow3-hor__line:nth-child(3)',5600)
+  animate('.arrow3-hor__line:nth-child(4)',5400)
+  animate('.arrow3-hor__line:nth-child(5)',5200)
+  animate('.arrow3-hor__line:nth-child(6)',5000)
+  animate('.arrow3-hor__line:nth-child(7)',4800)
+  animate('.arrow3-hor__line:nth-child(8)',4600)
+  animate('.arrow3-hor__line:nth-child(9)',4400)
+  animate('.arrow3-hor__line:nth-child(10)',4200)
+  animateImage('.crypto',6200)
+
+
+
+
+
+
+  
+
+  
+ </script>
+
+
+</body>
+</html>

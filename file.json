@@ -1,0 +1,19 @@
+ [
+  {
+    "animalName": "dog",
+    "legsCount": 4,
+    "animalType": "mammals"
+  },
+
+  {
+    "animalName": "Eagle",
+    "legsCount": 2,
+    "animalType": "Bird"
+  },
+
+  {
+    "animalName": "Shark",
+    "legsCount": 2,
+    "animalType": "Fish"
+  }
+]
